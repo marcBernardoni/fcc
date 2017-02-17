@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Formulaire d'enquête</h1>
+      <p id="description">Aidez nous à améliorer FCC en répondant à ce questionnaire.</p>
+    </header>
+    <main>
+      <form action="/#">
+        <p class="form-item">
+          <label for="name" id="name-label">* Votre nom: </label>
+          <input type="text" name="name" id="name" class="form-text" placeholder="Entrer votre nom" required>
+        </p>
+        <p class="form-item">
+          <label for="email" id="email-label">* Votre email: </label>
+          <input type="email" name="email" id="email" class="form-text" placeholder="Entrer votre email" required>
+        </p>
+        <p class="form-item">
+          <label for="number" id="number-label">* Âge: </label>
+          <input type="number" name="number" id="number" class="form-text" placeholder="Entrer votre âge" min="18" max="99" required>
+        </p>
+
+
+
+        <p class="form-item">
+          <label for="currentPos">Quelle est votre situation professionnelle: </label>
+          <select name="currentPos" id="currentPos" class="form-text">
+            <option disabled value>Choisissez une option</option>
+            <option value="student">Élève</option>
+            <option value="job">Emploi à plein temps</option>
+            <option value="learner">Étudiant à plein temps</option>
+            <option value="preferNo">Préfère ne pas répondre</option>
+            <option value="other">Autre</option>
+          </select>
+        </p>
+
+
+        <ul class="form-item">
+          <li class="label-like form-item">Comment recommanderiez-vous freeCodeCamp à un ami? </li>
+          <li>
+            <input type="radio" name="userRating" value="definitely" id="definitely" />
+            <label for="definitely" class="side-label">Définitivement</label>
+          </li>
+          <li>
+            <input type="radio" name="userRating" value="maybe" id="maybe" />
+            <label for="maybe" class="side-label">Peut-être</label>
+          </li>
+          <li>
+            <input type="radio" name="userRating" value="notSure" id="notSure" />
+            <label for="notSure" class="side-label">Sûrement pas</label>
+          </li>
+        </ul>
+
+
+
+        <p class="form-item">
+          <label for="mostLike">Qu'appreciez-vous le plus dans FCC: </label>
+          <select name="mostLike" id="mostLike" class="form-text">
+            <option disabled value>Choisissez une option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projets</option>
+            <option value="community">Communauté</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </p>
+
+        <ul class="form-item">
+          <li class="label-like form-item">Items que vous voudriez voir améliorés dans le futur (Plusieurs choix possible)</li>
+          <li>
+            <input type="checkbox" name="preferences" value="frontEndProject" id="frontEndProject" />
+            <label for="frontEndProject" class="side-label">Projets Front-end</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="backEndProject" id="backEndProject" />
+            <label for="backEndProject" class="side-label">Projets Back-end</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="dataVisualization" id="dataVisualization" />
+            <label for="dataVisualization" class="side-label">Visualisation des données</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="challenges" id="challenges" />
+            <label for="challenges" class="side-label">Challenges</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="openSourceCommunity" id="openSourceCommunity" />
+            <label for="openSourceCommunity" class="side-label">Communauté Open-Source</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="gitterHelpRoom" id="gitterHelpRoom" />
+            <label for="gitterHelpRoom" class="side-label">Salon d'entraide sur Gitter</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="videos" id="videos" />
+            <label for="videos" class="side-label">Vidéos</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="cityMeetup" id="cityMeetup" />
+            <label for="cityMeetup" class="side-label">Rencontres</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="wiki" id="wiki" />
+            <label for="wiki" class="side-label">Wiki</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="forum" id="forum" />
+            <label for="forum" class="side-label">Forum</label>
+          </li>
+          <li>
+            <input type="checkbox" name="preferences" value="additionalCourses" id="additionalCourses" />
+            <label for="additionalCourses" class="side-label">Autres cours</label>
+          </li>
+        </ul>
+
+        <p>
+          <label for="comments">Des commentaires ou des suggestions?</label>
+          <textarea name="comments" id="comments" class="form-text" rows="8" cols="80" placeholder="Entrez votre commentaire ici"></textarea>
+        </p>
+
+        <p>
+          <button type="submit" name="form-submit" id="form-submit" class="button">Envoyer le formulaire</button>
+        </p>
+
+
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
