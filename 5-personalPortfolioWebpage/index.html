@@ -2,43 +2,256 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Personal Portfolio Webpage</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Source+Sans+Pro:300,400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Header -->
   <header>
-    <nav id="navbar">
-      <a href="#welcome-section">Welcome</a>
-      <a href="#projects">Projects</a>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbars text-center">
+      <a href="#" class="navbars-brand">morifen dev</a>
+      <ul class="navbars-nav">
+        <li><a href="#welcome-section">accueil</a></li>
+        <li><a href="#expertises">expertises</a></li>
+        <li><a href="#projects">portfolio</a></li>
+        <li><a href="#contacts" class="btn btn-outline text-hidden">contactez-moi !</a></li>
+      </ul>
     </nav>
+    <!-- ./Navigation -->
   </header>
+  <!-- ./Header -->
 
+  <!-- Main -->
   <main>
-    <section id="welcome-section">
-      <h1>Welcome</h1>
+    <!-- #welcome-section -->
+    <section id="welcome-section" class="intro">
+      <div class="row text-center">
+        <p class="h3-like">Réalisation de Sites Web sur la région des 3 Frontières.</p>
+        <h1 class="">Marc, développeur Front-End.</h1>
+        <div class="col-1">
+          <p>Vous souhaitez un site web mais vous ne savez pas par où commencer, ou alors vous souhaitez améliorer votre site web pour vendre plus. Alors, n'hésitez plus.</p>
+          <p class="text-center">
+            <a href="#contacts" class="btn btn-lg btn-outline">Contactez-moi !</a>
+          </p>
+        </div>
+      </div>
     </section>
+    <!-- ./#welcome-section -->
 
-    <section id="projects">
-      <h2>My Projects</h2>
-      <a href="#" class="card">
-        <span class="project-image"></span>
-        <h3 class="project-tile">Project 1</h3>
-        <span class="project-text"></span>
-        <span class="project-author"></span>
-      </a>
+    <!-- #expertises -->
+    <section id="expertises" class="row">
+      <h2>Mon savoir-faire</h2>
+      <p>De la conception du site jusqu'à la mise en ligne de ce dernier, je mets à votre disposition toute mon expertise.</p>
+      <ul class="expertise col-3">
+        <!-- development -->
+        <li>
+          <p>
+            <i class="icon-html5  fa-3x"></i>
+            <i class="icon-css3  fa-3x"></i>
+            <i class="icon-javascript fa-3x"></i>
+          </p>
+          <h2 class="h3-like">Intégration</h2>
+          <p>Je crée des sites internet optimisés grâce à un code propre, maintenable et valide au regard des standarts de la profession (W3C).</p>
+        </li>
+        <!-- ./development -->
+        <!-- responsive -->
+        <li>
+          <p>
+            <i class="icon-mobile-device fa-3x"></i>
+          </p>
+          <h2 class="h3-like">Web mobile</h2>
+          <p>Que ce soit sur mobile ou sur tablette, votre site sera parfaitement optimisé grâce au Responsive Web Design.</p>
+        </li>
+        <!-- ./responsive -->
+        <!-- accessibility -->
+        <li>
+          <p>
+            <i class="fa fa-universal-access fa-3x"></i>
+          </p>
+          <h2 class="h3-like">Accessibilité</h2>
+          <p>Plus qu'une obligation légale, la possibilité de consulter votre site par l'ensemble de la population est au coeur de mes préocupations.</p>
+        </li>
+        <!-- ./accessibility -->
+        <!-- framework -->
+        <li>
+          <p>
+            <i class="icon-angular fa-3x"></i>
+            <i class="icon-ruby-on-rails fa-3x"></i>
+          </p>
+          <h2 class="h3-like">Framework</h2>
+          <p>Je réalise à votre demande toutes applications ou sites web faciles à mettre à jour.</p>
+        </li>
+        <!-- ./framework -->
+        <!-- advice -->
+        <li>
+          <p>
+            <i class="fa fa-coffee fa-3x"></i>
+          </p>
+          <h2 class="h3-like">Conseil</h2>
+          <p>Parlons de votre projet autour d'un café. Je pourrai, alors, vous conseiller pour mener votre projet au succès.</p>
+        </li>
+        <!-- ./advice -->
+      </ul>
     </section>
+    <!-- ./#expertises -->
 
-    <section>
-      <a href="https://github.com/morifenDev" id="profile-link" target="_blank">My profile</a>
+    <!-- #projects -->
+    <section id="projects" class="row">
+      <h2 class="project-tile">Mes réalisations</h2>
+      <p>Une courte sélection de mes créations.</p>
+      <div class="col-3 text-center">
+        <div class="project">
+          <a href="#">
+            <img src="https://goo.gl/0q6A1m" alt="FCC: Simple Tribute page" />
+            <div class="project-info">
+              <h2 class="project-title">Page d'hommage</h2>
+              <ul class="project-tags">
+                <li>#intégration</li>
+                <li>#responsive</li>
+              </ul>
+              <p class="project-text">Projet n°1</p>
+              <p class="project-text last">Création d'une page hommage à Henry de Montherlant avec une image "full responsive".</p>
+              <p class="project-btn"><span>En voir plus <i class="fa fa-arrow-right" aria-hidden="true"></i></span></p>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="#">
+            <img src="https://goo.gl/FDCTNv" alt="FCC: Survey Form" />
+            <div class="project-info">
+              <h2 class="project-title">Formulaire d'enquête</h2>
+              <ul class="project-tags">
+                <li>#intégration</li>
+                <li>#responsive</li>
+              </ul>
+              <p class="project-text">Projet n°2</p>
+              <p class="project-text last">Formulaire d'enquête imaginaire avec champs et puces personnalisés.</p>
+              <p class="project-btn"><span>En voir plus <i class="fa fa-arrow-right" aria-hidden="true"></i></span></p>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="#">
+            <img src="https://goo.gl/gXXLcV" alt="FCC: Product Landing Page" />
+            <div class="project-info">
+              <h2 class="project-title">Site vitrine</h2>
+              <ul class="project-tags">
+                <li>#intégration</li>
+                <li>#responsive</li>
+              </ul>
+              <p class="project-text">Projet n°3</p>
+              <p class="project-text last">Présentation d'une boutique virtuelle "Original Trombones" contruite tout particulièrement pour une consultation sur tablettes et smartphones.</p>
+              <p class="project-btn"><span>En voir plus <i class="fa fa-arrow-right" aria-hidden="true"></i></span></p>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="#">
+            <img src="https://goo.gl/Y74e3m" alt="FCC: Technical Documentation Page" />
+            <div class="project-info">
+              <h2 class="project-title">Documentation technique</h2>
+              <ul class="project-tags">
+                <li>#intégration</li>
+                <li>#responsive</li>
+              </ul>
+              <p class="project-text">Projet n°4</p>
+              <p class="project-text last">Présentation d'une documentation technique avec un menu fixe qui s'adapte à la résolution de votre écran.</p>
+              <p class="project-btn"><span>En voir plus <i class="fa fa-arrow-right" aria-hidden="true"></i></span></p>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="#">
+            <img src="https://goo.gl/ScW95k" alt="FCC: Portfolio webpage" />
+            <div class="project-info">
+              <h2 class="project-title">Portfolio</h2>
+              <ul class="project-tags">
+                <li>#intégration</li>
+                <li>#responsive</li>
+              </ul>
+              <p class="project-text">Projet n°5</p>
+              <p class="project-text last">Projet de fin d'étude proposé par FreeCodeCamp sur le Responsive Web Design avec la mobilisation de l'ensemble des connaissances acquises pour créer un portfolio "onePage".</p>
+              <p class="project-btn"><span>En voir plus <i class="fa fa-arrow-right" aria-hidden="true"></i></span></p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
+    <!-- ./#projects -->
+
+    <!-- #contacts -->
+    <section id="contacts" class="contact row">
+      <!-- header -->
+      <header class="header">
+        <h2>Travaillons ensemble...</h2>
+        <p>Comment préferez-vous prendre votre café?</p>
+      </header>
+      <!-- ./header -->
+
+      <!-- #contact-form -->
+      <form action="./#" id="contact-form">
+        <div class="grid-1">
+          <div class="grid-2">
+            <p class="form-item">
+              <label for="form-name">Votre nom</label>
+              <input type="text" name="form-name" id="form-name" class="form-text" required>
+            </p>
+            <p class="form-item">
+              <label for="form-email">Votre email</label>
+              <input type="text" name="form-email" id="form-email" class="form-text" required>
+            </p>
+          </div>
+          <p class="form-item">
+            <label for="form-textarea">Votre projet</label>
+            <textarea name="form-textarea" id="form-textarea" class="form-text" rows="10" cols="30"></textarea>
+          </p>
+          <p class="form-item text-right">
+            <button type="submit" name="form-submit" class="btn btn-outline">Me contacter</button>
+          </p>
+        </div>
+      </form>
+      <!-- ./#contact-form -->
+    </section>
+    <!-- ./#contacts -->
 
   </main>
+  <!-- Main -->
 
-  <footer>
+  <!-- Footer -->
+  <footer id="footer" class="site-footer">
+    <div class="row">
+      <div class="col-2">
+        <div>
+          <h2 class="footer-title">morifen dev</h2>
+          <p class="footer-text">Ce portfolio n'est qu'une ébauche créée dans le cadre de ma formation !</p>
+          <p class="footer-text">2017 &copy; Créé pour
+            <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a>
+          </p>
+        </div>
+        <!-- social -->
+        <ul class="social">
+          <li><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"><span class="text-hidden"> Twitter</span></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"><span class="text-hidden"> Facebook</span></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"><span class="text-hidden"> Google Plus</span></i></a></li>
+          <li><a href="https://github.com/morifenDev" id="profile-link" target="_blank"><i class="fa fa-github  fa-lg" aria-hidden="true"><span class="text-hidden"> Github</span></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"><span class="text-hidden"> Linkedin</span></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"><span class="text-hidden"> Email</span></i></a></li>
+        </ul>
+        <!-- ./social -->
+      </div>
 
+    </div>
   </footer>
+  <!-- ./Footer -->
 
 </body>
 
