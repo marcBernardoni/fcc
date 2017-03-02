@@ -23,7 +23,7 @@
         <li><a href="#welcome-section">accueil</a></li>
         <li><a href="#expertises">expertises</a></li>
         <li><a href="#projects">portfolio</a></li>
-        <li><a href="#contacts" class="btn btn-outline text-hidden">contactez-moi !</a></li>
+        <li><a href="#contacts" class="btn btn-outline">contactez-moi !</a></li>
       </ul>
     </nav>
     <!-- ./Navigation -->
@@ -199,8 +199,8 @@
 
       <!-- #contact-form -->
       <form action="./#" id="contact-form">
-        <div class="grid-1">
-          <div class="grid-2">
+        <div class="row">
+          <div class="col-2">
             <p class="form-item">
               <label for="form-name">Votre nom</label>
               <input type="text" name="form-name" id="form-name" class="form-text" required>
@@ -210,13 +210,17 @@
               <input type="text" name="form-email" id="form-email" class="form-text" required>
             </p>
           </div>
-          <p class="form-item">
-            <label for="form-textarea">Votre projet</label>
-            <textarea name="form-textarea" id="form-textarea" class="form-text" rows="10" cols="30"></textarea>
-          </p>
-          <p class="form-item text-right">
-            <button type="submit" name="form-submit" class="btn btn-outline">Me contacter</button>
-          </p>
+          <div class="col-1">
+            <p class="form-item">
+              <label for="form-textarea">Votre projet</label>
+              <textarea name="form-textarea" id="form-textarea" class="form-text" rows="10" cols="30"></textarea>
+            </p>
+          </div>
+          <div class="col-1">
+            <p class="form-item text-right">
+              <button type="submit" name="form-submit" class="btn btn-lg btn-outline">Me contacter</button>
+            </p>
+          </div>
         </div>
       </form>
       <!-- ./#contact-form -->
